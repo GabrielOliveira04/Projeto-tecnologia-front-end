@@ -45,8 +45,8 @@ function excluirMensagem(idMsg) {
 
 function validarUsuario(objLoginSenha) {
 
-  //  email: admin@admin.com;
-   // senha: '1234';
+    //  email: admin@admin.com;
+    // senha: '1234';
 
     var retorno = false;
 
@@ -59,7 +59,7 @@ function validarUsuario(objLoginSenha) {
         async: false,
         headers: {
             'Access-Control-Allow-Origin': '*'
-                },
+        },
         contentType: 'application/json',
         data: JSON.stringify(objLoginSenha)
     }).fail(function(){

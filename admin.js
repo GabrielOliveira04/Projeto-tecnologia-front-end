@@ -1,5 +1,6 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio do formulário
 
     // Obtém os valores dos campos
     var email = document.getElementById('login-email').value;
@@ -46,3 +47,4 @@ function validarUsuario(objLoginSenha) {
 
     return retorno;
 }
+});

@@ -18,4 +18,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Envia a mensagem para o servidor
     inserirMensagem(obj);
 
+    window.location.href = 'mensagens.html'
 });
